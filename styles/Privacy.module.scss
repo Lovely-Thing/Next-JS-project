@@ -1,0 +1,94 @@
+@import "variable";
+
+.pagecontent {
+    padding-top: 140px;
+    padding-bottom: 80px;
+
+    p {
+      color: $color_black;
+      font-family: $font_noto;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 36px;
+      margin-bottom: 0;
+    }
+
+    h3 {
+        font-family: $font_noto;
+        color: $color_black;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 36px;
+        margin-top: 80px;
+    }
+    ul {
+        font-family: $font_noto;
+        color: $color_black;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 36px;
+        p {
+            font-family: $font_noto;
+            color: $color_black;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 36px;
+            margin-bottom: 0;
+        }
+    }
+} 
+
+
+@include media('tb') {
+    .pagecontent {
+        padding-top: 76px;
+        padding-bottom: 90px;
+    
+        p { 
+          font-size: 15px;
+          line-height: 30px; 
+        }
+    
+        h3 { 
+            font-size: 22px;
+            line-height: 30px;
+            margin-top: 50px;
+        }
+        ul { 
+            font-size: 15px;
+            line-height: 30px; 
+            p { 
+                font-size: 15px;
+                line-height: 30px; 
+                margin-bottom: 0;
+            }
+        }
+    } 
+}
+
+@include media('sp') {
+    .pagecontent {  
+        padding-left: 20px;
+        padding-right: 20px;
+
+        p {
+          line-height: 27px; 
+        }
+    
+        h3 { 
+            font-size: 24px;
+            line-height: 30px;
+            margin-top: 50px;
+        }
+        ul {  
+            line-height: 27px;
+            list-style-position: inside;
+            padding-left: 0; 
+            p {  
+                line-height: 27px;  
+            }
+        }
+    }  
+}

@@ -1,0 +1,33 @@
+// Responsive Breakpoints
+$breakpoints: (
+'max1124':  'only screen and (max-width: 1124px)',  
+'max1024':  'only screen and (max-width: 1024px)', 
+'sp':       'only screen and (max-width: 768px)', 
+'tb':       'only screen and (max-width: 991px)', 
+'tc':       'only screen and (min-width: 992px)', 
+'pc':       'only screen and (min-width: 769px)'
+) !default;
+
+@mixin media($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+// Global Font and Color
+$font_noto: 'Noto Sans JP',
+sans-serif;
+$font_inter: 'Inter';
+
+$color_red_y: #FF403A;
+$color_yellow: #F69100;
+$color_white_opac: #FFE6C3;
+$color_black: #000000;
+$color_gray_67: #676767;
+$color_gray_70: #707070;
+$color_gray_83: #838383;
+$color_gray_55: #555555;
+$color_gray_af: #AFAFAF;
+$color_gray_33: #333333;
+$color_white: #FFFFFF;
